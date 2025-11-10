@@ -11,7 +11,8 @@ for (const inputElement of allInputs) {
   const inputText =
     inputElement.name[0].toUpperCase() + inputElement.name.slice(1);
 
-  newLabel.textContent = inputText;
+  newLabel.textContent = inputElement.name;
+
   inputElement.setAttribute('placeholder', inputText);
 
   inputElement.parentElement.appendChild(newLabel);
